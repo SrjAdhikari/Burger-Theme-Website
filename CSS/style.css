@@ -510,3 +510,86 @@ img {
     justify-self: center;
     filter: var(--shadow-big-img);
 }
+
+
+/******************* CONTACT *******************/
+.contact__container  {
+    position: relative;
+    background-color: var(--second-color);
+    padding-top: 3.5rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.contact__content {
+    row-gap: 3rem;
+}
+
+.contact__container .section__title,
+.contact__title,
+.contact__info {
+    color: var(--white-color);
+}
+
+.contact__data {
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.contact__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.contact__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact__social a {
+    width: 32px;
+    height: 32px;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform .4s;
+
+    display: grid;
+    place-items: center;
+}
+
+.contact__social a:hover  {
+    transform: translateY(-0.25rem);
+}
+
+.contact__info  {
+    font-style: normal;
+}
+
+.contact__image {
+    justify-self: center;
+}
+
+.contact__img {
+    width: 280px;
+}
+
+.contact__sticker-1,
+.contact__sticker-2 {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.contact__sticker-1 {
+    width: 40px;
+    top: 6.5rem;
+    left: 1.5rem;
+}
+
+.contact__sticker-2 {
+    width: 30px;
+    right: 3rem;
+    bottom: 12rem;
+}
