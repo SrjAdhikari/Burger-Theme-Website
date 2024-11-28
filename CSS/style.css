@@ -593,3 +593,60 @@ img {
     right: 3rem;
     bottom: 12rem;
 }
+
+
+/******************* FOOTER *******************/
+.footer {
+    padding-block: 3rem 2rem;
+}
+
+.footer__container  {
+    row-gap: 2rem;
+}
+
+.footer__logo {
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    color: var(--title-color);
+    justify-self: center;
+}
+
+.footer__content {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+}
+
+.footer__link {
+    color: var(--text-color);
+}
+
+.footer__social {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__social a {
+    width: 32px;
+    height: 32px;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform .4s;
+
+    display: grid;
+    place-items: center;
+}
+
+.footer__social a:hover  {
+    transform: translateY(-0.25rem);
+}
+
+.footer__copy {
+    display: block;
+    text-align: center;
+    font-size: var(--small-font-size);
+    margin-top: 3.5rem;
+}
