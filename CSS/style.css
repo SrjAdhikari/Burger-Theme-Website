@@ -475,3 +475,38 @@ img {
 .popular__card:hover .popular__img {
     transform: translateY(-0.5rem);
 }
+
+
+/******************* DELIVERY *******************/
+.delivery__container  {
+    row-gap: 2.5rem;
+}
+
+.delivery__data  {
+    position: relative;
+    text-align: center;
+}
+
+.delivery__container .section__title {
+    margin-bottom: 1rem;
+}
+
+.delivery__description  {
+    margin-bottom: 2rem;
+}
+
+.delivery__sticker {
+    width: 30px;
+    rotate: 15deg;
+    opacity: 0.5;
+
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+.delivery__img {
+    width: 320px;
+    justify-self: center;
+    filter: var(--shadow-big-img);
+}
