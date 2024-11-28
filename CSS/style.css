@@ -411,3 +411,67 @@ img {
 .recipe__card:nth-child(even) .recipe__box {
     order: 1;
 }
+
+
+/******************* POPULAR *******************/
+.popular {
+    background-color: var(--body-color-alt);
+}
+
+.popular__container  {
+    padding-block: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 1.5rem;
+}
+
+.popular__card  {
+    position: relative;
+    background-color: var(--first-color);
+    padding: 6rem 0.75rem 1rem;
+    border-radius: 1rem;
+    border: 4px solid var(--container-color);
+}
+
+.popular__img {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+
+    width: 120px;
+    margin: 0 auto;
+    filter: var(--shadow-small-img);
+    transition: transform .4s;
+}
+
+.popular__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.popular__price  {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-size: var(--h2-font-size);
+}
+
+.popular__button {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 1rem;
+
+    outline: none;
+    border: none;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    padding: 6px;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.popular__card:hover .popular__img {
+    transform: translateY(-0.5rem);
+}
