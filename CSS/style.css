@@ -650,3 +650,44 @@ img {
     font-size: var(--small-font-size);
     margin-top: 3.5rem;
 }
+
+
+/******************* MODIFY SCROLL BAR *******************/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: hsl(34, 16%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(34, 16%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(34, 16%, 55%);
+}
+
+
+/******************* Go To Top BUTTON *******************/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    color: var(--title-color);
+    background-color: var(--body-color);
+    box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
+
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    border-radius: 0.35rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 0.4s, transform 0.4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-0.5rem);
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
